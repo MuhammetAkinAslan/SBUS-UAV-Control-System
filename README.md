@@ -2,31 +2,48 @@
 
 ## Overview
 
-This project presents a wireless remote-control system developed for fixed-wing UAV applications. The system uses ESP32 microcontrollers and NRF24L01 radio modules to transmit control data and generate an SBUS-compatible output for integration with a Pixhawk flight controller.
+This project presents a wireless control system developed using ESP32 microcontrollers and NRF24L01 transceivers. The system generates an SBUS-compatible signal for communication with a Pixhawk flight controller in UAV applications.
 
-## System Components
+## Technologies
 
-* ESP32 microcontroller
-* NRF24L01 wireless communication module
-* Pixhawk flight controller
-* SBUS communication protocol
-* Joystick-based transmitter interface
+- ESP32
+- NRF24L01
+- SBUS Protocol
+- Pixhawk
+- Arduino IDE
 
-## Project Responsibilities
+## System Architecture
 
-* Integration of the wireless transmitter and receiver system
-* Configuration of the SBUS communication output
-* Mapping of remote-control channels
-* Integration with the Pixhawk flight controller
-* Communication and system stability tests
+<p align="center">
+  <img src="system_overview.png" width="900">
+</p>
 
-## Project Outcome
+The figure illustrates the overall transmitter and receiver architecture of the communication system.
 
-The system enabled wireless transmission of control commands to the UAV flight controller through an SBUS-compatible communication interface.
+## Hardware
+
+### Remote Controller
+
+<p align="center">
+  <img src="remotecontroller.jpeg" width="450">
+</p>
+
+### Receiver
+
+<p align="center">
+  <img src="receiver.jpeg" width="450">
+</p>
+
+## My Contributions
+
+- Designed the wireless communication architecture
+- Configured SBUS communication
+- Integrated ESP32 and NRF24L01 modules
+- Tested communication stability with the flight controller
 
 ## Source Code
 
-The source code is not publicly available because the system was developed as part of a team project.
+The source code is not publicly available because it was developed as part of a team project.
 
 ## Author
 
